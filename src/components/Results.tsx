@@ -1,4 +1,7 @@
 import { TrendingUp, Users, Award, Clock } from "lucide-react";
+import resultado1 from "@/assets/resultado1.jpg";
+import resultado2 from "@/assets/resultado2.jpg";
+import resultado3 from "@/assets/resultado3.jpg";
 
 const Results = () => {
   const stats = [
@@ -7,6 +10,8 @@ const Results = () => {
     { icon: TrendingUp, value: "98%", label: "Taxa de Satisfação" },
     { icon: Clock, value: "24h", label: "Suporte Disponível" },
   ];
+
+  const images = [resultado1, resultado2, resultado3];
 
   return (
     <section id="resultados" className="py-24 relative overflow-hidden">
@@ -59,16 +64,16 @@ const Results = () => {
 
         {/* Before/After showcase */}
         <div className="mt-20 grid md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((item) => (
+          {[0, 1, 2].map((item) => (
             <div
               key={item}
               className="bg-primary-foreground/10 backdrop-blur-sm rounded-3xl p-6 border border-primary-foreground/20 hover:bg-primary-foreground/20 transition-all duration-300 animate-fade-in-up"
-              style={{ animationDelay: `${item * 0.15}s` }}
+              style={{ animationDelay: `${(item + 1) * 0.15}s` }}
             >
               <div className="aspect-video bg-primary-foreground/20 rounded-2xl mb-4 flex items-center justify-center overflow-hidden">
                 <img
-                  src={`/src/assets/resultado${item}.jpg`}
-                  alt={`Resultado ${item}`}
+                  src={images[item]}
+                  alt={`Resultado ${item + 1}`}
                   className="object-cover w-full h-full"
                 />
               </div>
