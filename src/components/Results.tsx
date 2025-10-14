@@ -14,12 +14,17 @@ const Results = () => {
 
       {/* Decorative elements */}
       <div className="absolute top-10 right-20 w-72 h-72 bg-accent/20 blob-shape animate-float"></div>
-      <div className="absolute bottom-10 left-20 w-96 h-96 bg-primary-foreground/10 blob-shape-alt animate-float" style={{ animationDelay: '3s' }}></div>
+      <div
+        className="absolute bottom-10 left-20 w-96 h-96 bg-primary-foreground/10 blob-shape-alt animate-float"
+        style={{ animationDelay: "3s" }}
+      ></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-block px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full mb-4">
-            <span className="text-sm font-semibold text-accent-foreground">Nossos Resultados</span>
+            <span className="text-sm font-semibold text-accent-foreground">
+              Nossos Resultados
+            </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground mb-6">
             Números que Falam por Si
@@ -60,8 +65,12 @@ const Results = () => {
               className="bg-primary-foreground/10 backdrop-blur-sm rounded-3xl p-6 border border-primary-foreground/20 hover:bg-primary-foreground/20 transition-all duration-300 animate-fade-in-up"
               style={{ animationDelay: `${item * 0.15}s` }}
             >
-              <div className="aspect-video bg-primary-foreground/20 rounded-2xl mb-4 flex items-center justify-center">
-                <span className="text-primary-foreground/60 font-medium">Resultado {item}</span>
+              <div className="aspect-video bg-primary-foreground/20 rounded-2xl mb-4 flex items-center justify-center overflow-hidden">
+                <img
+                  src={`/src/assets/resultado${item}.jpg`}
+                  alt={`Resultado ${item}`}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <h4 className="text-lg font-semibold text-primary-foreground mb-2">
                 Transformação Visível

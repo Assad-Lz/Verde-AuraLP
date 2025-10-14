@@ -10,7 +10,10 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center overflow-hidden"
+    >
       {/* Background with organic shape */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
@@ -23,7 +26,10 @@ const Hero = () => {
 
       {/* Organic floating shapes */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-accent/20 blob-shape animate-float"></div>
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary-light/10 blob-shape-alt animate-float" style={{ animationDelay: '2s' }}></div>
+      <div
+        className="absolute bottom-20 left-10 w-96 h-96 bg-primary-light/10 blob-shape-alt animate-float"
+        style={{ animationDelay: "2s" }}
+      ></div>
 
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10 pt-24">
@@ -40,11 +46,18 @@ const Hero = () => {
             <span className="block text-accent">Naturalmente</span>
           </h1>
 
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Na Verdeliz, unimos o melhor da natureza com tecnologia de ponta para revelar sua beleza natural de forma saudável e sustentável.
+          <p
+            className="text-xl text-primary-foreground/90 mb-8 max-w-2xl animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
+            Na Verdeliz, unimos o melhor da natureza com tecnologia de ponta
+            para revelar sua beleza natural de forma saudável e sustentável.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+          <div
+            className="flex flex-col sm:flex-row gap-4 animate-fade-in-up"
+            style={{ animationDelay: "0.4s" }}
+          >
             <button
               onClick={() => scrollToSection("contato")}
               className="px-8 py-4 bg-accent text-accent-foreground rounded-full font-semibold hover:shadow-glow transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
