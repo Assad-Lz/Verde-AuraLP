@@ -1,9 +1,5 @@
 # 🌿 Verdeliz - Realce sua Beleza Naturalmente
 
-<p align="center">
-  <img src="URL_DA_SUA_IMAGEM_AQUI" alt="Verdeliz Landing Page" width="800"/>
-</p>
-
 ## ✨ Visão Geral
 
 Esta é a Landing Page estática da **Verdeliz**, desenvolvida para apresentar de forma elegante e responsiva os tratamentos e inovações que realçam a beleza naturalmente. Com um design focado na leveza e no bem-estar, a página convida os visitantes a agendar uma consulta e explorar os serviços oferecidos.
